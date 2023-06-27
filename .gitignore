@@ -1,0 +1,13 @@
+/.vs
+/.vscode
+/ProjectClean.Application/obj
+/ProjectClean.Application/bin
+/ProjectClean.Domain/obj
+/ProjectClean.Domain/bin
+/ProjectClean.Infra.Data/obj
+/ProjectClean.Infra.Data/bin
+/ProjectClean.Infra.Data/Migrations
+/ProjectClean.Infra.IoC/obj
+/ProjectClean.Infra.IoC/bin
+/ProjectClean.MVC/obj
+/ProjectClean.MVC/bin

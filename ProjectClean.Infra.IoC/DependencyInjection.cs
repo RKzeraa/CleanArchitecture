@@ -2,14 +2,18 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ProjectClean.Application.Interfaces;
+using ProjectClean.Application.Services;
+using ProjectClean.Domain.Interfaces;
 using ProjectClean.Infra.Data.Context;
+using ProjectClean.Infra.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjectClean.Infra.Data
+namespace ProjectClean.Infra.IoC
 {
     public static class DependencyInjection
     { 
@@ -22,6 +26,9 @@ namespace ProjectClean.Infra.Data
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddScoped<IProjectRepository, ProductRepository>();
+            services.AddScoped<IProductService, ProductService>();
 
             return services;
         }

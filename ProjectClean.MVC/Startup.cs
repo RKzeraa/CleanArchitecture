@@ -3,7 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using ProjectClean.Infra.Data;
+using ProjectClean.Infra.IoC;
+using ProjectClean.MVC.MappingConfig;
 
 namespace ProjectClean.MVC
 {
@@ -20,6 +21,7 @@ namespace ProjectClean.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddInfrasctructure(Configuration);
+            services.AddAutoMapperConfiguration();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

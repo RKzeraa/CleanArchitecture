@@ -8,7 +8,7 @@ namespace ProjectClean.Infra.Data.EntityConfigurations
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            builder.Property(p => p.Descrition)
+            builder.Property(p => p.Description)
                 .HasMaxLength(200)
                 .IsRequired();
 
@@ -24,21 +24,21 @@ namespace ProjectClean.Infra.Data.EntityConfigurations
                 { 
                     Id = 1, 
                     Name = "Caderno", 
-                    Descrition = "Caderno de 100 folhas", 
+                    Description = "Caderno de 100 folhas", 
                     Price = 7.50M
                 },
                 new Product 
                 { 
                     Id = 2, 
                     Name = "Borracha", 
-                    Descrition = "Borracha branca", 
+                    Description = "Borracha branca", 
                     Price = 2.50M
                 },
                 new Product 
                 { 
                     Id = 3, 
                     Name = "Caneta", 
-                    Descrition = "Caneta azul", 
+                    Description = "Caneta azul", 
                     Price = 1.50M
                 }
             );

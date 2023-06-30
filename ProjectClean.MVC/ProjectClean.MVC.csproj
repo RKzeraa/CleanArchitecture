@@ -7,7 +7,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\ProjectClean.Infra.Data\ProjectClean.Infra.Data.csproj" />
+    <ProjectReference Include="..\ProjectClean.Application\ProjectClean.Application.csproj" />
     <ProjectReference Include="..\ProjectClean.Infra.IoC\ProjectClean.Infra.IoC.csproj" />
   </ItemGroup>
 

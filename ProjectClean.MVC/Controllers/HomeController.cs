@@ -2,13 +2,14 @@
 using Microsoft.Extensions.Logging;
 using ProjectClean.Infra.Data.Models;
 using System.Diagnostics;
+using System.Text.Encodings.Web;
 
 namespace ProjectClean.MVC.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;

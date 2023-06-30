@@ -26,7 +26,7 @@ namespace ProjectClean.MVC
                 catch (Exception ex)
                 {
                     var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "Ocorreu um erro na Migração ou alimentação dos dados.");
+                    logger.LogError(ex, "Ocorreu um erro na MigraÃ§Ã£o ou alimentaÃ§Ã£o dos dados.");
                 }
             }
             host.Run();
